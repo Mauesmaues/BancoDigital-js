@@ -74,13 +74,9 @@ FinancialApp é um sistema de gerenciamento financeiro que permite aos usuários
    ```sh
    git clone https://github.com/seu-usuario/financialapp.git
    ```
-2. Instale as dependências necessárias:
+2. Execute a aplicação:
    ```sh
-   [Comando para instalação de dependências, se aplicável]
-   ```
-3. Execute a aplicação:
-   ```sh
-   [Comando para rodar a aplicação]
+   [node index.js]
    ```
 
 ## Contribuição
