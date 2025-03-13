@@ -67,7 +67,7 @@ FinancialApp é um sistema de gerenciamento financeiro que permite aos usuários
   - Alterar a taxa de juros dos empréstimos.
 
 ## Tecnologias Utilizadas
-- Linguagem de programação: [JavaScript]
+- Linguagem de programação: JavaScript
 
 ## Como Executar o Projeto
 1. Clone este repositório:
@@ -76,7 +76,7 @@ FinancialApp é um sistema de gerenciamento financeiro que permite aos usuários
    ```
 2. Execute a aplicação:
    ```sh
-   [node index.js]
+   node index.js
    ```
 
 ## Contribuição
