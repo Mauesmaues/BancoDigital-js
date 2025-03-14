@@ -5,6 +5,6 @@ module.exports = class User{
         this.name = name;
         this.email = email;
         this.password = password;
-        this.account = new Account("0", email);
+        this.account = new Account(0, email);
     }
 }

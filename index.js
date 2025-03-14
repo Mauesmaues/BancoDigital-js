@@ -22,6 +22,7 @@ App.newDeposit('alice@example.com', 100); // Alice deposita 100
 console.log("Saldo de Alice após depósito:", App.findUser('alice@example.com').account.getBalance());
 
 // Realizando um empréstimo
+App.setFees(20);
 console.log("\nRealizando empréstimo...");
 App.newLoan('alice@example.com', 200, 12); // Alice pega um empréstimo de 200
 console.log("Saldo de Alice após empréstimo:", App.findUser('alice@example.com').account.getBalance());
@@ -40,4 +41,7 @@ App.newTransfer('alice@example.com', 'bob@example.com', 100); // Deve mostrar sa
 console.log("\nSaldos finais:");
 console.log("Alice:", App.findUser('alice@example.com').account.getBalance());
 console.log("Bob:", App.findUser('bob@example.com').account.getBalance());
+App.showApp2();
+App.showApp();
+
 

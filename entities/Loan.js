@@ -1,10 +1,11 @@
+const installments = require("./Installment");
 const Installment = require("./Installment")
 module.exports = class Loan{
     static #fees;
     constructor(valueLoan, date, installments){
         this.valueLoan = valueLoan;
         this.date = date;
-        let valueInstallment = (valueLoan + (valueLoan * fees) / 100) / installments;
+        let valueInstallment = (valueLoan + (valueLoan * this.fees) / 100) / installments;
         this.installments = new Installment(valueInstallment, installments);
     }
 

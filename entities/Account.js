@@ -31,16 +31,26 @@ module.exports = class Account{
         this.loans.push(loan);
     }
 
-    newTransfer(userReceive, valueTransfer){
+    newTransfer(user, userReceive, valueTransfer){
         const data = new Date();
         if(userReceive.email === this.user){
             this.#balance += valueTransfer;
-            const transfer = new Transfer(user, this.user, valueTransfer, data)
+            const transfer = new Transfer(user, userReceive, valueTransfer, data)
             this.transfers.push(transfer)
         }else{
             this.#balance -= valueTransfer;
-            const transfer = new Transfer(this.user, user, valueTransfer, data)
+            const transfer = new Transfer(this.user, userReceive, valueTransfer, data)
             this.transfers.push(transfer)
         }
+    }
+
+    showAccount(){
+        console.log("#################################################################################################");
+        console.table(this.user);
+        console.table(this.#balance);
+        console.table(this.transfers);
+        console.table(this.deposits);
+        console.table(this.loans);
+        console.log("#################################################################################################");
     }
 }
